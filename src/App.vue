@@ -10,12 +10,14 @@
 
 <script>
 
-import Home from './components/Home.vue'
-import Header from './components/Header.vue'
+import Home from './components/Home.vue';
+import Header from './components/Header.vue';
+
 export default {
   components: {
     appHome: Home,
-    appHeader: Header
+    appHeader: Header,
+    
   },
   data () {
     return {

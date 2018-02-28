@@ -2,14 +2,16 @@
 <v-app>
     <v-slide-y-transition mode="out-in">
       <v-layout column align-center>
-        <img src="@/assets/logo.png" alt="Vuetify.js" class="mb-5">
-        <app-chart></app-chart>
-       <!-- <input type="radio" name="poll" id="yes" value="Yes">
+        <form id="poll-form">
+       <input type="radio" name="poll" id="yes" value="Yes">
           <label for="yes">Yes</label>
+
         <input type="radio" name="poll" id="no" value="No">
           <label for="no">No</label>
         <br>
-        <input type="submit" value="Vote" class="btn"> -->
+        <input type="submit" value="Vote" class="btn"> 
+        </form>
+
       </v-layout>
     </v-slide-y-transition>
   
@@ -17,19 +19,8 @@
 </template>
 
 <script>
-
-import Chart from './Chart.vue';
-
-export default {
-  components: {
-    appChart: Chart
-     
-  },
-}
-
+    
 </script>
-
-
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
